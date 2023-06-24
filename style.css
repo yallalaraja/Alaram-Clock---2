@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ee15ca;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock-container {
+  background-color: #12c6f7;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.clock-image {
+  width: 100px;
+}
+
+.current-time {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.alarm-form {
+  margin-bottom: 20px;
+}
+
+.time-select-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time-select-container select {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Display buttons in a column */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.submit-button,
+.stop-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%; /* Make buttons full width */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.submit-button {
+  background-color: #007bff;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.stop-button {
+  background-color: #dc3545;
+}
+
+.stop-button:hover {
+  background-color: #a71d2a;
+}
+
+.set-alarm-container-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.alarm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.delete-alarm {
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.delete-alarm:hover {
+  color: #a71d2a;
+}
+
+#testButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#testButton:hover {
+  background-color: #218838;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Alarm Clock"/>
+    <title>Alarm Clock</title>
+    <link rel="icon" href="https://library.kissclipart.com/20191014/aie/kissclipart-clock-icon-management-icon-time-icon-474c4db05c8d3baf.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <audio id="alarmSound" src="ringtone.mp3"></audio>
+    <div class="main-container d-flex">
+        <div class="clock-container d-flex">
+            <div>
+                <img class="clock-image" src="clock.png">
+            </div>
+            <div class="current-time mb" id="current-time">_ : _ : _ </div>
+            <form class="alarm-form d-flex mb">
+                <div class="time-select-container">
+                    <select name="hours" id="hours" required>
+                        <option value="" disabled selected>Hour</option>
+                    </select>
+                    <select required name="minutes" id="minutes">
+                        <option value="" disabled selected>Minutes</option>
+                    </select>
+                    <select required name="seconds" id="seconds">
+                        <option value="" disabled selected>Seconds</option>
+                    </select>
+                    <select required name="am-pm" id="am-pm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+                    <button class="btn stop-button" id="stopButton" type="button">Stop Alarm</button>
+                </div>
+            </form>
+            <div class="set-alarm-container">
+                <div class="set-alarm-container-title mb">ALARMS</div>
+                <div class="alarms-container" id="alarms-container"></div>
+            </div>
+        </div>
+    </div>
+    <button id="testButton">Test Alarm Sound</button>
+    <script src="script.js"></script>
+</body>
+</html>
